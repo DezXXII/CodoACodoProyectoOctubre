@@ -1,0 +1,64 @@
+/** Globals **/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FF3E4A;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/** Header Section **/
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav {
+    flex-direction: column;
+}
+
+/** Search Section **/
+
+.search {
+    text-align: center;
+}
+
+.search-div {
+    display: flex;
+    flex-direction: column;
+}
+
+/** Gifs Section **/
+
+.gif-container {
+    width: 260px;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.gif-container img {
+    width: 253px;
+    height: 240px;
+    border-radius: 9px;
+}
+
+/** Footer Section **/
+
+footer {
+    text-align: center;
+}
