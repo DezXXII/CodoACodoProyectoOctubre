@@ -6,17 +6,21 @@ window.onload = function() {
 
 async function fetchGifs() {
 
-    await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${APIKEY}&limit=5`)
+    await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${APIKEY}&limit=14`)
     .then(res => res.json())
     .then(res => {
         console.log(res.data);
-        for(let i = 0; i < 5; i++) {
+        for(let i = 0; i < 14; i++) {
+
             let gifContainer = document.createElement("div");
             let gifTitle = document.createElement("h2");
             let gifImg = document.createElement("img");
+
             gifImg.src = res.data[i].images.downsized.url;
             gifTitle.textContent = res.data[i].title;
+
             gifContainer.classList.add("gif-container");
+
             gifContainer.appendChild(gifTitle);
             gifContainer.appendChild(gifImg);
             gifsContainer.appendChild(gifContainer);
@@ -30,17 +34,21 @@ const gifsContainer = document.querySelector(".gifs-container");
 
 async function fetchGifsByCategory(category) {
 
-    await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=5&q=${category}`)
+    await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=14&q=${category}`)
     .then(res => res.json())
     .then(res => {
         console.log(res);
-        for(let i = 0; i < 5; i++) {
+        for(let i = 0; i < 14; i++) {
+
             let gifContainer = document.createElement("div");
             let gifTitle = document.createElement("h2");
             let gifImg = document.createElement("img");
+
             gifImg.src = res.data[i].images.downsized.url;
             gifTitle.textContent = res.data[i].title;
+
             gifContainer.classList.add("gif-container");
+
             gifContainer.appendChild(gifTitle);
             gifContainer.appendChild(gifImg);
             gifsContainer.appendChild(gifContainer);
