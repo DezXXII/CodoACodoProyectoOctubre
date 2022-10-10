@@ -99,8 +99,13 @@ button {
 }
 
 .gif-container h2 {
+    display: -webkit-box;
+      -webkit-line-clamp: 3; /* number of lines to show */
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
     margin: 0;
     line-height: 40px;
+
 }
 
 .gif-title {

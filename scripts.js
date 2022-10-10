@@ -46,6 +46,7 @@ async function fetchGifsByCategory(category) {
         for(let i = 0; i < 14; i++) {
 
             let gifContainer = document.createElement("div");
+            let gifTitleContainer = document.createElement("div");
             let gifTitle = document.createElement("h2");
             let gifImg = document.createElement("img");
 
@@ -53,9 +54,13 @@ async function fetchGifsByCategory(category) {
             gifTitle.textContent = res.data[i].title;
 
             gifContainer.classList.add("gif-container");
+            gifTitleContainer.classList.add("gif-title");
 
-            gifContainer.appendChild(gifTitle);
+            gifContainer.appendChild(gifTitleContainer);
             gifContainer.appendChild(gifImg);
+
+            gifTitleContainer.appendChild(gifTitle)
+
             gifsContainer.appendChild(gifContainer);
         }
     })
@@ -65,4 +70,14 @@ testBtn.addEventListener("click", e => {
     e.preventDefault();
     gifsContainer.innerHTML = '';
     fetchGifsByCategory(categoryInput.value);
+})
+var input=document.getElementById("category-input");
+
+input.addEventListener("keypress", e => {
+    if (e.key === "Enter"){
+        e.preventDefault();
+        gifsContainer.innerHTML = '';
+        fetchGifsByCategory(categoryInput.value);
+    }
+    
 })
