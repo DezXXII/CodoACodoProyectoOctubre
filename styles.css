@@ -30,11 +30,9 @@ a {
     color: black;
     font-size: 40px;
     margin-top: 20px;
-    font-weight: bold;
 }
 
 nav {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -43,7 +41,7 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -157,9 +155,7 @@ footer img {
     }
 
     nav {
-        margin-top: 0;
         flex-direction: row;
-        gap: 25px;
     }
 
     /** Gifs Section **/ 

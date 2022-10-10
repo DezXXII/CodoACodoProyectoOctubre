@@ -70,14 +70,16 @@ testBtn.addEventListener("click", e => {
     e.preventDefault();
     gifsContainer.innerHTML = '';
     fetchGifsByCategory(categoryInput.value);
+    categoryInput.value = '';
 })
-var input=document.getElementById("category-input");
 
-input.addEventListener("keypress", e => {
+
+categoryInput.addEventListener("keypress", e => {
     if (e.key === "Enter"){
         e.preventDefault();
         gifsContainer.innerHTML = '';
         fetchGifsByCategory(categoryInput.value);
+        categoryInput.value = '';
     }
     
 })
