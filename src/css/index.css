@@ -1,51 +1,4 @@
-/** Globals **/
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #FF3E4A;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-/** Header Section **/
-
-header {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 40px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-nav {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-}
 
 /** Search Section **/
 
@@ -129,38 +82,8 @@ button {
     height: 240px;
 }
 
-/** Footer Section **/
-
-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-footer img {
-    width: 30px;
-}
-
-.footer-images {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
 @media (min-width: 768px) {
 
-    /** Header **/
-
-    header {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    nav {
-        margin-top: 0;
-        flex-direction: row;
-        gap: 25px;
-    }
 
     /** Gifs Section **/ 
 

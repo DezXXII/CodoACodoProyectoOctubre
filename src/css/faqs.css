@@ -1,0 +1,63 @@
+body {
+
+    background-color: goldenrod !important
+}
+/** FAQ Section **/
+
+.faq-head {
+    border-bottom: #777;
+    padding: 20px 60px;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq-page {
+    color: black;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body {
+    margin: auto;
+    width: 50%;
+    padding: auto;
+    display: none;
+}
+
+
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.contacto{
+    font-size: 13px !important;
+    color: black;
+    font-weight: bolder;
+}
+
+.main-faq{
+    height: 80vh;
+    overflow: auto;
+}

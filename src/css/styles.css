@@ -8,14 +8,14 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: darkkhaki;
+    background-color: #FF3E4A;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
-    
 }
+
 /** Header Section **/
 
 header {
@@ -26,15 +26,13 @@ header {
 }
 
 a {
-    color: black;
     text-decoration: none;
+    color: black;
     font-size: 40px;
     margin-top: 20px;
-    font-weight: bold;
 }
 
 nav {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -43,27 +41,10 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
-
-/** About Section **/
-
-.about {
-    margin: 0 auto;
-    text-align: center;
-    width: 70%;
-    font-weight: bold;
-}
-
-.about p {
-    font-size: 30px;
-}
-
-.about h1 {
-    font-size: 60px;
-}
 
 /** Footer Section **/
 
@@ -81,7 +62,22 @@ footer img {
     display: flex;
     justify-content: center;
     gap: 10px;
+    font-size: 50px;
 }
+
+.fa-facebook:hover{
+    color: #4267B2
+}
+
+.fa-instagram:hover{
+    color: #C13584
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2
+}
+
+
 
 @media (min-width: 768px) {
 
@@ -93,19 +89,6 @@ footer img {
     }
 
     nav {
-        margin-top: 0;
         flex-direction: row;
-        gap: 25px;
     }
 
-    /** About Section **/
-
-    .about {
-        width: 30%;
-        margin-bottom: 120px;
-    }
-
-    .about p {
-        margin-top: 100px;
-    }
-}
