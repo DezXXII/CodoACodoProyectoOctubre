@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -23,8 +23,25 @@
             </nav>
         </header>
 
+        <h1>Contacto</h1>
+        
         <main>
-            CONTACTO
+            <form action="" class="form">
+                <p class="req">* Requerido</p>
+                <label for="name">* Nombre completo: </label>
+                <input oninput="validateInputName()" id="name" type="text">
+
+                <label for="email">* Correo electronico: </label>
+                <input oninput="validateEmail()" id="email" type="email">
+
+                <label for="tel">* Telefono: </label>
+                <input oninput="validateInputTel()" id="tel" type="number">
+
+                <label for="message">* Mensaje: </label>
+                <input oninput="validateInputMessage()" id="message" type="text">
+
+                <button>Enviar</button>
+            </form>
         </main>
 
         <footer>
@@ -38,5 +55,6 @@
             
     </div>
     
+    <script src="../js/contact.js"></script>
 </body>
 </html>
